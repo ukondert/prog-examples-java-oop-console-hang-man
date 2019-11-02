@@ -3,7 +3,7 @@ package at.htlle.pos2.simplehangman;
 import at.htlle.pos2.inpututils.InputValidationUtil;
 
 /**
- * Klasse HangMan dient Steuerung/Durchführung des Spiels. 
+ * Klasse HangManHandler dient zur Steuerung/Durchführung des Spiels. 
  * 
  * Die direkte Interaktion mit dem Benutzer/Spieler erfolgt NICHT mit dieser Klasse -> Keine
  * Implementierung des User Interfaces (= UI) in dieser Klasse
@@ -11,7 +11,7 @@ import at.htlle.pos2.inpututils.InputValidationUtil;
  * @author uweko
  *
  */
-public class HangMan {
+public class HangManHandler {
 	
 	// Fragen
 	private Question[] questions;
@@ -55,7 +55,7 @@ public class HangMan {
 	 * 
 	 * @param maxFaildTials - max. Anzahl an Fehlversuchen 
 	 */
-	public HangMan(int maxFaildTials) {
+	public HangManHandler(int maxFaildTials) {
 		
 		this.maxfailedTrials = maxFaildTials;
 		String abcString = "ABCDEFGHIJKLMNOPQRSTUVWXYZÄÜÖß";
